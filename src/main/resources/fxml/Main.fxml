@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apBackground" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="800.0" prefWidth="1066.0"
+            xmlns="http://javafx.com/javafx/16" fx:controller="com.teampingui.controllers.MainController">
+    <children>
+        <Button fx:id="btnHabits" onAction="#switchScenes" prefHeight="52.0" prefWidth="532.5" text="Home"/>
+        <Button fx:id="btnSettings" layoutX="533.0" onAction="#switchScenes" prefHeight="52.0" prefWidth="532.5"
+                text="Settings"/>
+
+        <Label fx:id="lWelcome" layoutX="40.0" layoutY="92.0" prefHeight="50.0" prefWidth="540.0" text="Hi Paul!"/>
+        <Label fx:id="lMiniJournal" layoutX="739.0" layoutY="109.0" prefHeight="42.0" prefWidth="286.0"
+               text="Your daily journal"/>
+
+        <TextArea fx:id="taNewJournal" layoutX="739.0" layoutY="185.0" prefHeight="129.0" prefWidth="224.0"
+                  promptText="How was your day?" wrapText="true"/>
+        <Button fx:id="btnAddJournal" layoutX="975.0" layoutY="185.0" mnemonicParsing="false" onAction="#addNewEntry"
+                prefHeight="129.0" prefWidth="51.0" text="+"/>
+        <Label fx:id="wordCount" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="900.0" layoutY="314.0"
+               prefWidth="60.0" text="200/200" textAlignment="RIGHT"/>
+        <ListView fx:id="lvJournal" layoutX="739.0" layoutY="336.0" prefHeight="425.0" prefWidth="287.0"/>
+
+        <Button fx:id="btnRemoveHabit" layoutX="32.0" layoutY="185.0" mnemonicParsing="false" onAction="#removeHabit"
+                prefHeight="45.0" prefWidth="318.0" text="X Remove a habit"/>
+        <Button fx:id="btnAddHabit" layoutX="388.0" layoutY="185.0" mnemonicParsing="false" onAction="#openHabitDialog"
+                prefHeight="45.0" prefWidth="318.0" text="+ Add a new habit"/>
+        <Button fx:id="btnLastWeek" layoutX="40.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickWeekBefore"
+                prefHeight="40.0" prefWidth="40.0" text="←"/>
+        <Button fx:id="btnNextWeek" layoutX="95.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClickWeekNext"
+                prefHeight="40.0" prefWidth="40.0" text="→"/>
+        <ProgressBar fx:id="habitsProgress" layoutX="40.0" layoutY="335.0" prefHeight="16.0" prefWidth="665"
+                     progress="0.69"/>
+        <Label fx:id="progressDisplay" layoutX="623.0" layoutY="356.0" text="69%"/>
+        <TableView fx:id="tvHabits" layoutX="40.0" layoutY="400.0" prefHeight="360.0" prefWidth="665.0">
+            <!--columns>
+                <TableColumn prefWidth="158.0" resizable="false" text="Habit" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Mon" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Tue" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Wed" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Thu" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Fri" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Sat" />
+                <TableColumn prefWidth="60.0" resizable="false" text="Sun" />
+                <TableColumn fx:id="reps" prefWidth="85.0" resizable="false" text="Done" />
+            </columns-->
+        </TableView>
+
+        <Label fx:id="lDate" layoutX="42.0" layoutY="372.0" prefHeight="16.0" prefWidth="242.0" text="Datum"/>
+
+    </children>
+</AnchorPane>

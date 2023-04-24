@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="800.0" prefWidth="1066.0"
+            xmlns="http://javafx.com/javafx/18" fx:controller="com.teampingui.controllers.SettingsController">
+    <children>
+        <Button fx:id="btnHabits" onAction="#switchScenes" prefHeight="52.0" prefWidth="532.5" text="Home"/>
+        <Button fx:id="btnSettings" layoutX="533.0" onAction="#switchScenes" prefHeight="52.0" prefWidth="532.5"
+                text="Settings"/>
+
+        <Label fx:id="lSettings" layoutX="509.0" layoutY="92.0" text="Settings"/>
+
+        <HBox layoutX="378.0" layoutY="250.0" prefHeight="24.0" prefWidth="355.0">
+            <children>
+                <Label fx:id="lName" prefHeight="20.0" prefWidth="200.0" text="Preferred name"/>
+                <TextField fx:id="tfName" prefHeight="13.0" prefWidth="200.0" promptText="John Doe"/>
+            </children>
+        </HBox>
+
+        <Button fx:id="btnSaveChanges" layoutX="378.0" layoutY="304.0" mnemonicParsing="false" onAction="#saveChanges"
+                prefHeight="26.0" prefWidth="355.0" text="Save changes"/>
+    </children>
+</AnchorPane>

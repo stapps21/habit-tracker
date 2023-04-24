@@ -1,0 +1,143 @@
+#lMiniJournal {
+    -fx-font-size: 24px;
+}
+
+#lWelcome, #lSettings {
+    -fx-font-size: 32px;
+}
+
+.button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dadada;
+    -fx-border-radius: 1000px;
+    -fx-background-radius: 1000px;
+}
+
+#btnHabits, #btnSettings {
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #738076;
+    -fx-border-color: #738076;
+    -fx-text-fill: #fff;
+}
+
+#btnHabits:hover, #btnSettings:hover {
+    -fx-background-color: #4E5750;
+    -fx-border-color: #4E5750;
+    -fx-text-fill: #fff;
+}
+
+
+.button:hover {
+    -fx-background-color: rgba(245, 245, 245, 80);
+    -fx-border-radius: 1000px;
+    -fx-background-radius: 1000px;
+}
+
+#apBackground {
+    -fx-background-color: #fff;
+}
+
+#dpHabit {
+    -fx-padding: 0;
+    -fx-start-margin: 0;
+}
+
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dadada;
+}
+
+#btnAddHabit {
+    -fx-border-color: #7CCD8F;
+    -fx-text-fill: #7CCD8F;
+}
+
+#btnAddHabit:hover {
+    -fx-background-color: #7CCD8F;
+    -fx-text-fill: #fff;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #7CCD8F;
+}
+
+#pbErrorDuration .track {
+    -fx-opacity: 0;
+}
+
+#pbErrorDuration {
+    -fx-start-margin: 0;
+    -fx-end-margin: 0;
+}
+
+#bpDialog {
+    -fx-padding: 0;
+    -fx-start-margin: 0;
+    -fx-end-margin: 0;
+}
+
+#vbErrorContainer {
+    /*-fx-background-color: #E3675B;*/
+    -fx-border-color: #E3675B;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+    -fx-max-height: 38;
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-radius: 0 0 10 10;
+}
+
+#lErrorMsg {
+    -fx-font-size: 16;
+    -fx-text-fill: #ffffff;
+}
+
+#btnRemoveHabit:hover {
+    -fx-border-color: #E3675B;
+    -fx-text-fill: #fff;
+    -fx-background-color: #E3675B;
+}
+
+#btnRemoveHabit {
+    -fx-border-color: #E3675B;
+    -fx-text-fill: #E3675B;
+}
+
+#tvHabits {
+    -fx-background-color: transparent;
+    -fx-border-radius: 8px;
+}
+
+#reps {
+    -fx-alignment: center;
+}
+
+
+.cb-done .box {
+    -fx-background-color: #7CCD8F;
+}
+
+.cb-done:selected .mark {
+    -fx-background-color: white;
+}
+
+.cb-haveto .box {
+    -fx-background-color: #E3675B;
+}
+
+.cb-donthaveto .box {
+    -fx-background-color: #dadada;
+}
+
+.cb-donthaveto:selected .mark {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #73807690;
+}
+
+#lErrorMsgHabit {
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="logs" fileName="logs.log" append="false">
+            <PatternLayout pattern="%t %-5p %c{2} - %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <!-- You may want to define class or package level per-logger rules -->
+        <Root level="info">
+            <AppenderRef ref="logs"/>
+        </Root>
+    </Loggers>
+</Configuration>
